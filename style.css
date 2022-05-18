@@ -1,0 +1,68 @@
+:root{
+    --color-title: white;
+    --color-title-secondary: black;
+    --padding-20: 20px;
+    --padding-10: 10px;
+    --text-align-justify: justify;
+    --text-align-center: center;
+    --linear-gradient: 1.8;
+    --text-decoration: none;
+    --padding-top: 40px;
+}
+
+/*header*/
+header h1{
+    color: var(--color-title);
+}
+
+header a{
+    text-decoration: var(--text-decoration);
+    padding: var(--padding-20);
+}
+
+.list-nav{
+    justify-content: end;
+    display: flex;
+}
+
+/*navbar*/
+nav{
+    background: rgb(119, 115, 115);
+}
+
+nav a{
+    color: var(--color-title);
+}
+
+/*body*/
+body{
+    margin: 0;
+    padding: 0;
+}
+/*banniére*/
+.banner{
+background:url('./images/bureau3.webp') fixed no-repeat;
+height:250px;
+background-size: cover;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+position: relative;
+z-index: 1;
+}
+.banner *{
+    z-index: 2;
+}
+
+.banner::before{
+    content: "";
+    z-index: 3;
+    background: rgba(37, 59, 119, 0.5);
+}
+
+/*sections*/
+
+section{
+    padding-top: var(--padding-top);
+}
